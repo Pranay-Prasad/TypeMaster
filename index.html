@@ -9,9 +9,18 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <!-- <div></div> -->
-    <div class="contain">
-        <div class="timer" id="timer">0</div>
+    <div class="header">
+        <nav class="navbar">
+            <h1>TypeMaster</h1>
+        </nav>
+        <div class="info">
+            <p>You can test your typing speed. click START and get Started</p>
+            <p>Records are been displayed on the basis of past 5 rounds and your average speed is calculated on the basis of <span id="highlight">words per seconds</span>.</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="contain">
+            <div class="timer" id="timer">0</div>
         <div class="container">
             <div class="text-disp" id="text-disp"></div>
             <textarea id="typearea" class="typearea" autofocus></textarea>
@@ -21,7 +30,7 @@
     <div class="display">
         <h1>Record</h1>
         <div class="average-disp"><h1><span id="avg">0</span></h1></div>
-
+        
         <div class="list">
             <table class="table">
                 <thead>
@@ -41,6 +50,7 @@
             </table>
         </div>
         <div class="clearbtn"><button onclick="clearall()">Remove all DATA</button></div>
+    </div>
     </div>
 </body>
 </html>
