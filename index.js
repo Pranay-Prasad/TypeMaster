@@ -117,14 +117,14 @@ function listadd(){
     }
     tablebody.innerHTML = str;
     let average = 0;
-    let sum = 0;
+    let Atime = 0;
     let word = 0;
     arr.forEach((element) =>{
-        sum = sum + Math.floor(element[1]);
+        Atime = Atime + Math.floor(element[1]);
         word = word + Math.floor(element[0]);
     })
-    console.log(sum)
-    average = word/sum;
+    console.log(Atime)
+    average = word/Atime;
     avg.innerHTML = Math.round(average);
     erasearea();
 }
