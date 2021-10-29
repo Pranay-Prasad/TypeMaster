@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeMaster</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="contain">
+        <div class="timer" id="timer">0</div>
+        <div class="container">
+            <div class="text-disp" id="text-disp"></div>
+            <textarea id="typearea" class="typearea" autofocus></textarea>
+        </div>
+        <div class="btn"><Button id="btn" onclick="renderQuote()">Start</Button></div>
+    </div>
+    <div class="display">
+        <h1>Record</h1>
+        <div class="average-disp"><h1><span id="avg">0</span></h1></div>
+
+        <div class="list">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Sr no</th>
+                        <th scope="col">Words</th>
+                        <th scope="col">Time in sec</th>
+                    </tr>
+                </thead>
+                <tbody id="TableBody">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="clearbtn"><button onclick="clearall()">Remove all DATA</button></div>
+    </div>
+</body>
+</html>

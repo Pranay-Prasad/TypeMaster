@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items:center ;
+    justify-content: flex-end;
+    min-height: 100vh;
+}
+@media screen and (max-width: 900px) {
+    body{
+        flex-direction: column;
+    }
+    .display{
+        margin: auto;
+        width: 300px;
+        margin-right: 0;
+    }
+    .contain{
+        width: 440px;
+        margin: auto;
+    }
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px;
+}
+.display{
+    border: 2px solid black;
+    height: 450px;
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: rgb(250, 242, 209);
+}
+.list{
+    border: 2px solid black;
+    width: 90%;
+    height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.table thead th{
+    padding: 10px 25px;
+    border-bottom: 2px solid black;
+}
+.table tbody td,.table tbody th{
+    border-bottom: 1px solid black;
+}
+.timer{
+    margin-bottom: 5rem;
+    font-size: 5rem;
+}
+.container{
+    border: 2px solid black;
+    width: 600px;
+    max-width: 90%;
+    padding: 10px 20px;
+    background-color: rgb(248, 248, 89);
+    border-radius: 20px;
+}
+.typearea{
+    width: 100%;
+    height: 230px;
+    resize: none;
+    outline: none;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 5px;
+    margin: auto;
+    padding: .5rem 1rem;
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 1.2rem;
+}
+.typearea:focus{
+    border: 2px solid rgb(0, 0, 0);
+}
+.text-disp{
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 1.2rem;
+    color: black;
+}
+.btn button{
+    width: 80px;
+    height: 30px ;
+    margin-top: 5px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+}
+.btn button:hover{
+    cursor: pointer;
+    border-color: rgb(139, 139, 139);
+}
+.clearbtn button{
+    height: 30px;
+    border-radius: 10px;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    border: 2px solid black;
+}
+.clearbtn button:hover{
+    cursor: pointer;
+}
+#avg{
+    color: rgb(255, 90, 30);
+}
+#avg::after{
+    content: 'Words/sec';
+    font-size: 0.7rem;
+    color: black;
+}
+#avg::before{
+    content: 'Average speed: ';
+    font-size: 1rem;
+    color: black;
+}
+.correct{
+    color: green;
+}
+.incorrect{
+    color: red;
+    text-decoration: underline;
+}
